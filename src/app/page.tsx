@@ -12,6 +12,7 @@ import { FAQ } from "@/components/sections/FAQ";
 import { Upsell } from "@/components/sections/Upsell";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
+import { SalesPopup } from "@/components/ui/SalesPopup";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <Upsell />
       <FinalCTA />
       <Footer />
+      <SalesPopup />
     </main>
   );
 }

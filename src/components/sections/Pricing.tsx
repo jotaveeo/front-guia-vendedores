@@ -20,7 +20,7 @@ export function Pricing() {
           size="lg"
           className="w-full text-lg md:text-xl py-6 bg-foreground text-background border-2 border-foreground hover:bg-foreground/90 shadow-none hover:-translate-y-1 hover:shadow-[4px_4px_0_0_#F5F5F0]"
         >
-          <a href="PRODUTO">QUERO O GUIA COMPLETO</a>
+          <a href="https://pay.cakto.com.br/z7475c6_1028186">QUERO O GUIA COMPLETO</a>
         </Button>
 
         <div className="mt-6 flex flex-wrap justify-center items-center gap-4 text-sm font-bold opacity-80">

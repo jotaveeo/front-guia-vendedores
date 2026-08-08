@@ -19,7 +19,7 @@ export function FinalCTA() {
           size="lg"
           className="w-full sm:w-fit text-xl py-6 px-12 border-2 border-foreground shadow-[4px_4px_0_0_#1a1a1a] hover:shadow-[2px_2px_0_0_#1a1a1a] hover:translate-y-[2px] hover:translate-x-[2px]"
         >
-          <a href="PRODUTO">QUERO COMEÇAR AGORA</a>
+          <a href="https://pay.cakto.com.br/z7475c6_1028186">QUERO COMEÇAR AGORA</a>
         </Button>
       </div>
     </Section>

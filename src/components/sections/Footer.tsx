@@ -1,5 +1,5 @@
 import React from "react";
-import { Section } from "@/components/ui/Section";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -15,15 +15,15 @@ export function Footer() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-6 font-bold opacity-80 text-sm">
-          <a href="#" className="hover:text-primary transition-colors">
+          <Link href="/privacidade" className="hover:text-primary transition-colors">
             Políticas de Privacidade
-          </a>
-          <a href="#" className="hover:text-primary transition-colors">
+          </Link>
+          <Link href="/termos" className="hover:text-primary transition-colors">
             Termos de Uso
-          </a>
-          <a href="#" className="hover:text-primary transition-colors">
+          </Link>
+          <Link href="/contato" className="hover:text-primary transition-colors">
             Contato
-          </a>
+          </Link>
         </div>
       </div>
 

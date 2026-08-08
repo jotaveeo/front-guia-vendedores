@@ -21,7 +21,7 @@ export function Hero() {
 
           <div className="flex flex-col gap-4 mt-4">
             <Button size="lg" className="text-lg w-full sm:w-fit px-10 py-6 border-2 border-foreground shadow-[4px_4px_0_0_#1a1a1a] hover:shadow-[2px_2px_0_0_#1a1a1a] hover:translate-y-[2px] hover:translate-x-[2px]">
-              QUERO ORGANIZAR MINHAS VENDAS
+              <a href="https://pay.cakto.com.br/z7475c6_1028186">QUERO ORGANIZAR MINHAS VENDAS</a>
             </Button>
             <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-foreground/70">
               <span className="flex items-center gap-1"><CheckCircle2 className="w-4 h-4 text-primary"/> Acesso imediato</span>
