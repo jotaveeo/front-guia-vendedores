@@ -4,11 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ShoppingBag, X } from "lucide-react";
 
 const buyers = [
-  { name: "Ana Laura", city: "São Paulo, SP", time: "há 2 minutos" },
-  { name: "Juliana", city: "Belo Horizonte, MG", time: "há 5 minutos" },
-  { name: "Camila", city: "Curitiba, PR", time: "há 12 minutos" },
-  { name: "Fernanda", city: "Rio de Janeiro, RJ", time: "há 1 minuto" },
-  { name: "Mariana", city: "Fortaleza, CE", time: "há 8 minutos" },
   { name: "Beatriz", city: "Salvador, BA", time: "há 4 minutos" },
   { name: "Amanda", city: "Goiânia, GO", time: "há 15 minutos" },
   { name: "Letícia", city: "Porto Alegre, RS", time: "há 3 minutos" },
