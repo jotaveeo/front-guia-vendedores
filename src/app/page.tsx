@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
 import { Problem } from "@/components/sections/Problem";
 import { Product } from "@/components/sections/Product";
+import { Carousel } from "@/components/sections/Carousel";
 import { Modules } from "@/components/sections/Modules";
 import { Bonus } from "@/components/sections/Bonus";
 import { Audience } from "@/components/sections/Audience";
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <Product />
+      <Carousel />
       <Modules />
       <Bonus />
       <Audience />

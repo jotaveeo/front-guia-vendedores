@@ -15,7 +15,7 @@ export function Hero() {
  
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-zinc-50 to-zinc-400 max-w-4xl drop-shadow-sm">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-zinc-50 to-zinc-400 max-w-4xl drop-shadow-sm">
             O Sistema Completo de Vendas para
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-green-400 to-green-600">
@@ -45,7 +45,7 @@ export function Hero() {
           <div className="mt-10 flex flex-col items-center gap-4 w-full">
             <Button
               size="lg"
-              className="w-full sm:w-auto px-8 md:px-14 py-6 text-lg md:text-xl font-extrabold bg-green-500 hover:bg-green-400 text-zinc-950 border-0 shadow-[0_0_40px_rgba(34,197,94,0.3)] hover:shadow-[0_0_60px_rgba(34,197,94,0.5)] rounded-full transition-all duration-300 hover:scale-105 uppercase tracking-wide"
+              className="w-full sm:w-auto px-8 md:px-14 py-4 md:py-6 text-base md:text-xl font-extrabold bg-green-500 hover:bg-green-400 text-zinc-950 border-0 shadow-[0_0_40px_rgba(34,197,94,0.3)] hover:shadow-[0_0_60px_rgba(34,197,94,0.5)] rounded-full transition-all duration-300 hover:scale-105 uppercase tracking-wide"
             >
               Quero Meus 365 Stories Prontos por R$ 27
             </Button>

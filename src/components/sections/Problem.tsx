@@ -19,14 +19,14 @@ export function Problem() {
             Você trabalha o dia inteiro para ficar no <span className="text-red-500">vácuo?</span>
           </h2>
 
-          <div className="flex flex-col gap-6 w-full max-w-3xl">
+          <div className="flex flex-col gap-4 md:gap-6 w-full max-w-3xl">
             {problems.map((text, idx) => (
               <div 
                 key={idx} 
-                className="flex items-start gap-5 p-6 md:p-8 rounded-2xl bg-[#1a1a1a] border border-zinc-800/80 shadow-lg hover:border-zinc-700 hover:-translate-y-1 transition-all duration-300"
+                className="flex items-start gap-4 md:gap-5 p-5 md:p-8 rounded-2xl bg-[#1a1a1a] border border-zinc-800/80 shadow-lg hover:border-zinc-700 hover:-translate-y-1 transition-all duration-300"
               >
                 <XCircle className="w-8 h-8 text-red-500 shrink-0 mt-0.5" strokeWidth={2.5} />
-                <p className="text-lg md:text-xl text-zinc-300 font-medium leading-relaxed">
+                <p className="text-base md:text-xl text-zinc-300 font-medium leading-relaxed">
                   {text}
                 </p>
               </div>
