@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="text-center md:text-left">
           <h2 className="text-2xl font-extrabold uppercase mb-2 text-primary">
-            O Guia Prático
+            O Produto Prático
           </h2>
           <p className="font-bold opacity-70">
             © 2026 Todos os direitos reservados.

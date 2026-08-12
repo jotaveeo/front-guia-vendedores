@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: "Termos de Uso | O Guia Prático",
+  title: "Termos de Uso | O Produto Prático",
 };
 
 export default function Termos() {
@@ -22,12 +22,12 @@ export default function Termos() {
         
         <div className="prose prose-lg max-w-none text-foreground/80 font-medium space-y-6">
           <p>
-            Ao acessar e utilizar os materiais fornecidos pelo site "O Guia Prático", você concorda com estes termos.
+            Ao acessar e utilizar os materiais fornecidos pelo site "O Produto Prático", você concorda com estes termos.
           </p>
           
           <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">1. Do Produto</h2>
           <p>
-            O "Guia Prático" é um infoproduto digital em formato PDF, desenvolvido para fins educacionais e informativos. Todo o conteúdo é protegido por direitos autorais e não pode ser revendido ou distribuído sem autorização.
+            O "Produto Prático" é um infoproduto digital em formato Produto, desenvolvido para fins educacionais e informativos. Todo o conteúdo é protegido por direitos autorais e não pode ser revendido ou distribuído sem autorização.
           </p>
           
           <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">2. Do Acesso</h2>

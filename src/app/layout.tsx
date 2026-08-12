@@ -9,7 +9,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Guia Prático | Vendas por WhatsApp e Instagram",
+  title: "Produto Prático | Vendas por WhatsApp e Instagram",
   description: "Organize suas vendas pelo WhatsApp e Instagram",
 };
 

@@ -1,47 +1,39 @@
 import React from 'react';
-import { Section } from '@/components/ui/Section';
-import { Card } from '@/components/ui/Card';
-import { Smartphone, MessageCircle, Clock, Search, FileText, AlertCircle } from 'lucide-react';
+import { FadeIn } from '@/components/ui/FadeIn';
+import { XCircle } from 'lucide-react';
 
 export function Problem() {
   const problems = [
-    { icon: <Smartphone />, text: "Tirar print do catálogo para mandar para as clientes" },
-    { icon: <MessageCircle />, text: "Responder as mesmas perguntas no WhatsApp o dia todo" },
-    { icon: <Search />, text: "Procurar uma conversa antiga para descobrir um pedido" },
-    { icon: <AlertCircle />, text: "Esquecer quem ainda precisa pagar ou já pagou" },
-    { icon: <Clock />, text: "Não saber quais clientes estão há muito tempo sem comprar" },
-    { icon: <FileText />, text: "Colocar preço manualmente em dezenas de imagens" },
+    "Perde horas tentando criar artes no Canva e sai tudo amador.",
+    "Posta foto do catálogo e ninguém responde.",
+    "As clientes perguntam o preço, você responde e elas somem."
   ];
 
   return (
-    <Section variant="muted" className="border-y-4 border-foreground">
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-6">
-          Se você vende pelas redes sociais, provavelmente já passou por isso...
-        </h2>
-      </div>
+    <section className="relative w-full py-20 md:py-32 bg-[#121212] text-zinc-100 overflow-hidden z-0">
+      <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
+      
+      <div className="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full z-10 flex flex-col items-center">
+        <FadeIn className="flex flex-col items-center w-full">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center tracking-tight mb-12 text-zinc-100 drop-shadow-sm">
+            Você trabalha o dia inteiro para ficar no <span className="text-red-500">vácuo?</span>
+          </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-        {problems.map((problem, idx) => (
-          <Card key={idx} className="flex flex-col gap-4 border-2 border-foreground shadow-[4px_4px_0_0_#1a1a1a]">
-            <div className="w-12 h-12 bg-primary/20 text-primary rounded-lg flex items-center justify-center border-2 border-foreground">
-              {problem.icon}
-            </div>
-            <p className="font-bold text-foreground text-lg leading-snug">
-              {problem.text}
-            </p>
-          </Card>
-        ))}
+          <div className="flex flex-col gap-6 w-full max-w-3xl">
+            {problems.map((text, idx) => (
+              <div 
+                key={idx} 
+                className="flex items-start gap-5 p-6 md:p-8 rounded-2xl bg-[#1a1a1a] border border-zinc-800/80 shadow-lg hover:border-zinc-700 hover:-translate-y-1 transition-all duration-300"
+              >
+                <XCircle className="w-8 h-8 text-red-500 shrink-0 mt-0.5" strokeWidth={2.5} />
+                <p className="text-lg md:text-xl text-zinc-300 font-medium leading-relaxed">
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </FadeIn>
       </div>
-
-      <div className="text-center bg-primary text-primary-foreground p-8 md:p-12 rounded-2xl border-4 border-foreground shadow-[8px_8px_0_0_#1a1a1a]">
-        <h3 className="text-2xl md:text-3xl font-extrabold mb-2">
-          Você não precisa trabalhar mais.
-        </h3>
-        <p className="text-xl md:text-2xl font-bold opacity-90">
-          Precisa organizar melhor o que já faz.
-        </p>
-      </div>
-    </Section>
+    </section>
   );
 }

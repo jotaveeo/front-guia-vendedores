@@ -16,7 +16,7 @@ export function Upsell() {
         </h2>
 
         <p className="text-lg md:text-2xl font-bold opacity-90 mb-10 leading-relaxed max-w-2xl mx-auto">
-          O guia ajuda você a organizar sua estratégia. Mas, se você quiser uma
+          O Produto ajuda você a organizar sua estratégia. Mas, se você quiser uma
           estrutura pronta para apresentar seus produtos, podemos criar uma{" "}
           <strong>vitrine digital personalizada</strong>, com seus produtos,
           informações, promoções e botão direto para o WhatsApp.

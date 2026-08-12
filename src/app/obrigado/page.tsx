@@ -8,7 +8,7 @@ import { CheckCircle2, Mail, Smartphone, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Obrigado pela compra! | O Guia Prático",
+  title: "Obrigado pela compra! | O Produto Prático",
   description: "Seu acesso foi liberado com sucesso.",
 };
 
@@ -25,7 +25,7 @@ export default function Obrigado() {
               Compra Aprovada!
             </h1>
             <p className="text-xl font-bold text-foreground/80 text-balance">
-              Parabéns pela decisão. O seu acesso ao Guia Prático foi liberado com sucesso.
+              Parabéns pela decisão. O seu acesso ao Produto Prático foi liberado com sucesso.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function Obrigado() {
                 </div>
                 <div>
                   <h3 className="font-extrabold text-xl text-foreground mb-1">2. Acesse o material</h3>
-                  <p className="text-foreground/80 font-medium text-lg leading-relaxed">Você já pode abrir o Guia e baixar todos os bônus e checklists diretamente no seu celular ou computador.</p>
+                  <p className="text-foreground/80 font-medium text-lg leading-relaxed">Você já pode abrir o Produto e baixar todos os bônus e checklists diretamente no seu celular ou computador.</p>
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@ export default function Obrigado() {
               Quer ir além e construir a sua própria página?
             </h2>
             <p className="text-lg text-foreground/80 font-bold mb-8 text-balance max-w-xl mx-auto">
-              Para complementar o seu novo e-book e acelerar seus resultados, entre em contato comigo! Vamos conversar sobre como podemos estruturar a sua própria Vitrine Digital para você vender de forma ainda mais profissional.
+              Para complementar o seu novo produto e acelerar seus resultados, entre em contato comigo! Vamos conversar sobre como podemos estruturar a sua própria Vitrine Digital para você vender de forma ainda mais profissional.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

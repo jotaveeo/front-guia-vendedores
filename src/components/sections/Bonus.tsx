@@ -5,13 +5,17 @@ import { Gift, FileText, MessageSquare, Calendar, LayoutList, ListChecks, Smartp
 
 export function Bonus() {
   const bonuses = [
-    { title: "30 ideias de Stories para revendedoras", icon: <Smartphone className="w-8 h-8" /> },
-    { title: "20 mensagens prontas para WhatsApp", icon: <MessageSquare className="w-8 h-8" /> },
-    { title: "Planilha simples de pedidos e pagamentos", icon: <FileText className="w-8 h-8" /> },
+    { title: "365 Roteiros de Stories Prontos", icon: <Smartphone className="w-8 h-8" /> },
+    { title: "20 mensagens prontas para WhatsApp (Anti-Vacuo)", icon: <MessageSquare className="w-8 h-8" /> },
+    { title: "Planilha Anti-Fiado", icon: <FileText className="w-8 h-8" /> },
     { title: "Calendário semanal de conteúdo", icon: <Calendar className="w-8 h-8" /> },
     { title: "Checklist do Instagram profissional", icon: <ListChecks className="w-8 h-8" /> },
     { title: "Checklist de Vendas Profissionais", icon: <LayoutList className="w-8 h-8" /> },
     { title: "Roteiro para criar sua vitrine digital", icon: <Gift className="w-8 h-8" /> },
+    { title: "O Calendário Anual (365 Dias de Stories Prontos)", icon: <Calendar className="w-8 h-8" /> },
+    { title: "365 Dias de Ideias para Stories", icon: <Smartphone className="w-8 h-8" /> },
+    { title: "Guia de Edição no Canva", icon: <LayoutList className="w-8 h-8" /> },
+    { title: "Vitrine Express", icon: <LayoutList className="w-8 h-8" /> },
   ];
 
   return (
@@ -21,7 +25,7 @@ export function Bonus() {
           O que você recebe
         </h2>
         <p className="text-lg md:text-xl font-medium text-foreground/80">
-          Além do guia principal, você recebe 7 materiais práticos para acelerar sua organização.
+          Além do Produto principal, você recebe 7 materiais práticos para acelerar sua organização.
         </p>
       </div>
 
@@ -29,11 +33,11 @@ export function Bonus() {
         <Card className="col-span-1 md:col-span-2 lg:col-span-3 bg-primary text-primary-foreground flex flex-col md:flex-row gap-8 items-center border-4 border-foreground shadow-[8px_8px_0_0_#1a1a1a]">
           <div className="w-32 h-32 md:w-48 md:h-48 bg-foreground text-background flex-shrink-0 flex items-center justify-center rounded-xl border-4 border-foreground relative overflow-hidden">
              <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(currentColor 2px, transparent 2px)', backgroundSize: '8px 8px' }}></div>
-             <FileText className="w-16 h-16 md:w-24 md:h-24 z-10" />
+             <img src="/logo-500x500.png" alt="Produto Principal" className="w-full h-full object-contain p-2 z-10" />
           </div>
           <div>
             <span className="inline-block px-3 py-1 bg-foreground text-background font-bold text-sm rounded-full mb-4">PRODUTO PRINCIPAL</span>
-            <h3 className="text-2xl md:text-4xl font-extrabold mb-4">O Guia Prático</h3>
+            <h3 className="text-2xl md:text-4xl font-extrabold mb-4">O Produto Prático</h3>
             <p className="text-lg md:text-xl font-bold opacity-90">Como organizar suas vendas pelo WhatsApp e Instagram.</p>
           </div>
         </Card>

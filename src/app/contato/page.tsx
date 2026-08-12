@@ -15,7 +15,7 @@ const InstagramIcon = ({ className }: { className?: string }) => (
 );
 
 export const metadata = {
-  title: "Contato | O Guia Prático",
+  title: "Contato | O Produto Prático",
 };
 
 export default function Contato() {
@@ -32,7 +32,7 @@ export default function Contato() {
           Fale Conosco
         </h1>
         <p className="text-lg font-bold text-foreground/80 mb-12">
-          Se você precisa de suporte, tem dúvidas sobre o e-book, ou tem interesse no serviço da Vitrine Digital, estou à disposição!
+          Se você precisa de suporte, tem dúvidas sobre o produto, ou tem interesse no serviço da Vitrine Digital, estou à disposição!
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

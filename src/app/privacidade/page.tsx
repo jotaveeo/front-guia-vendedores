@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: "Políticas de Privacidade | O Guia Prático",
+  title: "Políticas de Privacidade | O Produto Prático",
 };
 
 export default function Privacidade() {

@@ -16,7 +16,7 @@ export function Audience() {
 
   const notFor = [
     "Você procura uma fórmula de enriquecimento rápido",
-    "Espera que um e-book faça as vendas por você",
+    "Espera que um produto faça as vendas por você",
     "Já possui uma operação digital altamente estruturada",
     "Procura um curso avançado de tráfego pago"
   ];
