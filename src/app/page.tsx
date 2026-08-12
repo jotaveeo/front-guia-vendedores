@@ -7,6 +7,7 @@ import { Bonus } from "@/components/sections/Bonus";
 import { Audience } from "@/components/sections/Audience";
 import { Transformation } from "@/components/sections/Transformation";
 import { HowItWorks } from "@/components/sections/HowItWorks";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { Pricing } from "@/components/sections/Pricing";
 import { Guarantee } from "@/components/sections/Guarantee";
 import { FAQ } from "@/components/sections/FAQ";
@@ -22,11 +23,12 @@ export default function Home() {
       <Problem />
       <Product />
       <Carousel />
-      <Modules />
+      {/* <Modules /> */}
       <Bonus />
       <Audience />
       <Transformation />
       <HowItWorks />
+      <TestimonialsSection />
       <Pricing />
       <Guarantee />
       <FAQ />

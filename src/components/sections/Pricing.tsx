@@ -5,7 +5,10 @@ import { Lock, ShieldCheck, Check } from "lucide-react";
 
 export function Pricing() {
   return (
-    <section className="relative w-full py-20 md:py-32 bg-[#0a0a0a] text-zinc-100 overflow-hidden z-0">
+    <section
+      id="pricing"
+      className="relative w-full py-20 md:py-32 bg-[#0a0a0a] text-zinc-100 overflow-hidden z-0"
+    >
       <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[500px] bg-green-500/5 blur-[150px] rounded-full pointer-events-none -z-10" />
 
@@ -38,11 +41,11 @@ export function Pricing() {
               </p>
 
               <div className="mt-6 flex items-baseline gap-2">
-                <span className="text-lg font-medium text-zinc-500 line-through">
+                <span className="text-[29px] font-medium text-zinc-500 line-through">
                   De R$ 97
                 </span>
                 <span className="text-4xl md:text-5xl font-extrabold text-zinc-100">
-                  R$ 27
+                  R$ 19
                 </span>
               </div>
             </div>
@@ -66,6 +69,12 @@ export function Pricing() {
                   Acesso imediato
                 </span>
               </div>
+              <div className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
+                <span className="text-zinc-300 font-medium">
+                  Ideias para Stories
+                </span>
+              </div>
             </div>
 
             <Button
@@ -73,7 +82,9 @@ export function Pricing() {
               className="w-full text-lg py-6 font-bold bg-zinc-800 hover:bg-zinc-700 text-zinc-100 border border-zinc-700/50 rounded-full transition-all"
             >
               <a
-                href="#"
+                href="https://pay.cakto.com.br/z7475c6_1028186"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full h-full flex items-center justify-center"
               >
                 QUERO O PACOTE BÁSICO
@@ -103,11 +114,11 @@ export function Pricing() {
               </p>
 
               <div className="mt-6 flex items-baseline gap-2">
-                <span className="text-lg font-medium text-zinc-500 line-through">
+                <span className="text-[29px] font-medium text-zinc-500 line-through">
                   De R$ 197
                 </span>
                 <span className="text-4xl md:text-5xl font-extrabold text-green-400">
-                  R$ 67
+                  R$ 47
                 </span>
               </div>
             </div>
@@ -184,7 +195,9 @@ export function Pricing() {
               className="w-full text-lg py-6 font-extrabold bg-green-500 hover:bg-green-400 text-zinc-950 border-0 shadow-[0_0_30px_rgba(34,197,94,0.3)] hover:shadow-[0_0_40px_rgba(34,197,94,0.5)] rounded-full transition-all hover:scale-[1.02] uppercase"
             >
               <a
-                href="#"
+                href="https://pay.cakto.com.br/3ce7ort"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full h-full flex items-center justify-center"
               >
                 QUERO O PACOTE PREMIUM

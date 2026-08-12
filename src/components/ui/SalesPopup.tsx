@@ -93,7 +93,8 @@ export function SalesPopup() {
                 {buyer.name} de {buyer.city}
               </p>
               <p className="text-sm font-medium text-foreground/80 mt-1">
-                acabou de comprar O Produto Prático
+                acabou de comprar <br />
+                "Operação Vendedora"
               </p>
               <p className="text-xs font-bold text-primary mt-2">
                 {buyer.time}

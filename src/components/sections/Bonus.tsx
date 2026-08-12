@@ -5,17 +5,17 @@ import { Gift, FileText, MessageSquare, Calendar, LayoutList, ListChecks, Smartp
 
 export function Bonus() {
   const bonuses = [
-    { title: "365 Roteiros de Stories Prontos", icon: <Smartphone className="w-8 h-8" /> },
-    { title: "20 mensagens prontas para WhatsApp (Anti-Vacuo)", icon: <MessageSquare className="w-8 h-8" /> },
-    { title: "Planilha Anti-Fiado", icon: <FileText className="w-8 h-8" /> },
-    { title: "Calendário semanal de conteúdo", icon: <Calendar className="w-8 h-8" /> },
-    { title: "Checklist do Instagram profissional", icon: <ListChecks className="w-8 h-8" /> },
-    { title: "Checklist de Vendas Profissionais", icon: <LayoutList className="w-8 h-8" /> },
-    { title: "Roteiro para criar sua vitrine digital", icon: <Gift className="w-8 h-8" /> },
-    { title: "O Calendário Anual (365 Dias de Stories Prontos)", icon: <Calendar className="w-8 h-8" /> },
-    { title: "365 Dias de Ideias para Stories", icon: <Smartphone className="w-8 h-8" /> },
-    { title: "Guia de Edição no Canva", icon: <LayoutList className="w-8 h-8" /> },
-    { title: "Vitrine Express", icon: <LayoutList className="w-8 h-8" /> },
+    { title: "365 Roteiros de Stories Prontos", icon: <Smartphone className="w-8 h-8" />, value: "R$ 97,00" },
+    { title: "20 mensagens prontas para WhatsApp (Anti-Vacuo)", icon: <MessageSquare className="w-8 h-8" />, value: "R$ 47,00" },
+    { title: "Planilha Anti-Fiado", icon: <FileText className="w-8 h-8" />, value: "R$ 47,00" },
+    { title: "Calendário semanal de conteúdo", icon: <Calendar className="w-8 h-8" />, value: "R$ 27,00" },
+    { title: "Checklist do Instagram profissional", icon: <ListChecks className="w-8 h-8" />, value: "R$ 27,00" },
+    { title: "Checklist de Vendas Profissionais", icon: <LayoutList className="w-8 h-8" />, value: "R$ 27,00" },
+    { title: "Roteiro para criar sua vitrine digital", icon: <Gift className="w-8 h-8" />, value: "R$ 47,00" },
+    { title: "O Calendário Anual (365 Dias de Stories Prontos)", icon: <Calendar className="w-8 h-8" />, value: "R$ 97,00" },
+    { title: "365 Dias de Ideias para Stories", icon: <Smartphone className="w-8 h-8" />, value: "R$ 97,00" },
+    { title: "Guia de Edição no Canva", icon: <LayoutList className="w-8 h-8" />, value: "R$ 47,00" },
+    { title: "Vitrine Express", icon: <LayoutList className="w-8 h-8" />, value: "R$ 47,00" },
   ];
 
   return (
@@ -43,12 +43,18 @@ export function Bonus() {
         </Card>
 
         {bonuses.map((bonus, idx) => (
-          <Card key={idx} className="flex flex-col items-center text-center gap-4 border-2 border-foreground shadow-[4px_4px_0_0_#1a1a1a]">
-            <span className="px-3 py-1 bg-primary text-primary-foreground font-bold text-xs rounded-full border-2 border-foreground">BÔNUS 0{idx + 1}</span>
-            <div className="text-foreground my-2">
-              {bonus.icon}
+          <Card key={idx} className="flex flex-col items-center justify-between text-center gap-4 border-2 border-foreground shadow-[4px_4px_0_0_#1a1a1a] h-full">
+            <div className="flex flex-col items-center">
+              <span className="px-3 py-1 bg-primary text-primary-foreground font-bold text-xs rounded-full border-2 border-foreground mb-2">BÔNUS 0{idx + 1}</span>
+              <div className="text-foreground my-2">
+                {bonus.icon}
+              </div>
+              <h4 className="font-bold text-lg mb-2">{bonus.title}</h4>
             </div>
-            <h4 className="font-bold text-lg">{bonus.title}</h4>
+            <div className="mt-auto pt-4 border-t-2 border-foreground/10 w-full flex flex-col items-center">
+              <span className="line-through text-foreground/50 font-bold text-sm">De {bonus.value}</span>
+              <span className="text-green-600 font-extrabold text-lg uppercase tracking-wide">Por Grátis</span>
+            </div>
           </Card>
         ))}
       </div>

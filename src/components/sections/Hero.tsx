@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
@@ -15,11 +17,11 @@ export function Hero() {
  
 
           {/* Headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-zinc-50 to-zinc-400 max-w-4xl drop-shadow-sm">
-            O Sistema Completo de Vendas para
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-zinc-50 to-zinc-400 max-w-4xl drop-shadow-sm uppercase">
+            365 OFERTAS PRONTAS QUE VÃO TRANSFORMAR A SUA FORMA DE POSTAR E
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-green-400 to-green-600">
-              Copiar, Colar e Vender Todos os Dias durante 365 dias!
+              ACABAR COM O VÁCUO DOS CLIENTES
             </span>
           </h1>
 
@@ -45,9 +47,10 @@ export function Hero() {
           <div className="mt-10 flex flex-col items-center gap-4 w-full">
             <Button
               size="lg"
+              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
               className="w-full sm:w-auto px-8 md:px-14 py-4 md:py-6 text-base md:text-xl font-extrabold bg-green-500 hover:bg-green-400 text-zinc-950 border-0 shadow-[0_0_40px_rgba(34,197,94,0.3)] hover:shadow-[0_0_60px_rgba(34,197,94,0.5)] rounded-full transition-all duration-300 hover:scale-105 uppercase tracking-wide"
             >
-              Quero Meus 365 Stories Prontos por R$ 27
+              QUERO MEU PRODUTO AGORA NA PROMOÇÃO
             </Button>
             <div className="flex items-center gap-2 text-zinc-500 text-sm font-medium">
               <ShieldCheck className="w-4 h-4 text-green-500" />

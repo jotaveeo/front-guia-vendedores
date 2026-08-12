@@ -7,9 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export function Carousel() {
   const images = [
-    { src: "/mockap-celular.png", alt: "Mockup no Celular" },
-    { src: "/capa_produto.png", alt: "Capa do Produto Completo" },
-    { src: "/logo-500x500.png", alt: "Logo Operação Vendedora" },
+    { src: "/capa_produto2.png", alt: "Mockup no Celular" },
+    { src: "/imagem2-carrossel.png", alt: "Capa do Produto Completo" },
+    { src: "/imagem3-carrossel.png", alt: "Logo Operação Vendedora" },
+    { src: "/imagem4carrossel.png", alt: "Logo Operação Vendedora" },
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
