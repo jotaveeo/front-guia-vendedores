@@ -12,6 +12,9 @@ const sora = Sora({
 export const metadata: Metadata = {
   title: "Produto Prático | Vendas por WhatsApp e Instagram",
   description: "Organize suas vendas pelo WhatsApp e Instagram",
+  icons: {
+    icon: "/logotipo.svg",
+  },
 };
 
 export default function RootLayout({
