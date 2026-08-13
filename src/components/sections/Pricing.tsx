@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
@@ -86,6 +88,15 @@ export function Pricing() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full h-full flex items-center justify-center"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
+                    (window as any).fbq('track', 'InitiateCheckout', {
+                      content_name: 'Pacote Básico',
+                      value: 19.00,
+                      currency: 'BRL'
+                    });
+                  }
+                }}
               >
                 QUERO O PACOTE BÁSICO
               </a>
@@ -199,6 +210,15 @@ export function Pricing() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full h-full flex items-center justify-center"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
+                    (window as any).fbq('track', 'InitiateCheckout', {
+                      content_name: 'Kit Revendedora Premium',
+                      value: 47.00,
+                      currency: 'BRL'
+                    });
+                  }
+                }}
               >
                 QUERO O PACOTE PREMIUM
               </a>
