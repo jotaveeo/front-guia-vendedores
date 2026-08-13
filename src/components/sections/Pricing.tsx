@@ -79,31 +79,28 @@ export function Pricing() {
               </div>
             </div>
 
-            <Button
-              size="lg"
-              className="w-full text-lg py-6 font-bold bg-zinc-800 hover:bg-zinc-700 text-zinc-100 border border-zinc-700/50 rounded-full transition-all"
+            <a
+              href="https://pay.cakto.com.br/z7475c6_1028186"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-lg py-6 px-8 md:text-xl font-bold bg-zinc-800 hover:bg-zinc-700 text-zinc-100 border border-zinc-700/50 rounded-full transition-all inline-flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-1"
+              onClick={() => {
+                console.log("Clicou no botão básico");
+                if (
+                  typeof window !== "undefined" &&
+                  typeof (window as any).fbq === "function"
+                ) {
+                  console.log("Enviando evento básico para o FB");
+                  (window as any).fbq("track", "InitiateCheckout", {
+                    content_name: "Pacote Básico",
+                    value: 19.0,
+                    currency: "BRL",
+                  });
+                }
+              }}
             >
-              <a
-                href="https://pay.cakto.com.br/z7475c6_1028186"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full h-full flex items-center justify-center"
-                onClick={() => {
-                  if (
-                    typeof window !== "undefined" &&
-                    typeof (window as any).fbq === "function"
-                  ) {
-                    (window as any).fbq("track", "InitiateCheckout", {
-                      content_name: "Pacote Básico",
-                      value: 19.0,
-                      currency: "BRL",
-                    });
-                  }
-                }}
-              >
-                QUERO O PACOTE BÁSICO
-              </a>
-            </Button>
+              QUERO O PACOTE BÁSICO
+            </a>
           </FadeIn>
 
           {/* Plano Premium */}
@@ -204,31 +201,28 @@ export function Pricing() {
               </div>
             </div>
 
-            <Button
-              size="lg"
-              className="w-full text-lg py-6 font-extrabold bg-green-500 hover:bg-green-400 text-zinc-950 border-0 shadow-[0_0_30px_rgba(34,197,94,0.3)] hover:shadow-[0_0_40px_rgba(34,197,94,0.5)] rounded-full transition-all hover:scale-[1.02] uppercase"
+            <a
+              href="https://pay.cakto.com.br/3ce7ort"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-lg py-6 px-8 md:text-xl font-extrabold bg-green-500 hover:bg-green-400 text-zinc-950 border-0 shadow-[0_0_30px_rgba(34,197,94,0.3)] hover:shadow-[0_0_40px_rgba(34,197,94,0.5)] rounded-full transition-all hover:scale-[1.02] uppercase inline-flex items-center justify-center"
+              onClick={() => {
+                console.log("Clicou no botão premium");
+                if (
+                  typeof window !== "undefined" &&
+                  typeof (window as any).fbq === "function"
+                ) {
+                  console.log("Enviando evento premium para o FB");
+                  (window as any).fbq("track", "InitiateCheckout", {
+                    content_name: "Kit Revendedora Premium",
+                    value: 47.0,
+                    currency: "BRL",
+                  });
+                }
+              }}
             >
-              <a
-                href="https://pay.cakto.com.br/3ce7ort"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full h-full flex items-center justify-center"
-                onClick={() => {
-                  if (
-                    typeof window !== "undefined" &&
-                    typeof (window as any).fbq === "function"
-                  ) {
-                    (window as any).fbq("track", "InitiateCheckout", {
-                      content_name: "Kit Revendedora Premium",
-                      value: 47.0,
-                      currency: "BRL",
-                    });
-                  }
-                }}
-              >
-                QUERO O PACOTE PREMIUM
-              </a>
-            </Button>
+              QUERO O PACOTE PREMIUM
+            </a>
           </FadeIn>
         </div>
 
