@@ -16,7 +16,7 @@ const FAQ = dynamic(() => import("@/components/sections/FAQ").then(m => m.FAQ));
 const Upsell = dynamic(() => import("@/components/sections/Upsell").then(m => m.Upsell));
 const FinalCTA = dynamic(() => import("@/components/sections/FinalCTA").then(m => m.FinalCTA));
 const Footer = dynamic(() => import("@/components/sections/Footer").then(m => m.Footer));
-const SalesPopup = dynamic(() => import("@/components/ui/SalesPopup").then(m => m.SalesPopup), { ssr: false });
+const SalesPopup = dynamic(() => import("@/components/ui/SalesPopup").then(m => m.SalesPopup));
 
 export default function Home() {
   return (
