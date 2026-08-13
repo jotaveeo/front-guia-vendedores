@@ -10,7 +10,7 @@ export function Pricing() {
       className="relative w-full py-20 md:py-32 bg-[#0a0a0a] text-zinc-100 overflow-hidden z-0"
     >
       <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[500px] bg-green-500/5 blur-[150px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[500px] bg-green-500/5 blur-[60px] md:blur-[150px] will-change-transform transform-gpu rounded-full pointer-events-none -z-10" />
 
       <div className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full z-10">
         <FadeIn className="text-center max-w-3xl mx-auto mb-16">

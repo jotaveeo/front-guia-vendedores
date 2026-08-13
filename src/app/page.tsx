@@ -1,20 +1,22 @@
 import { Hero } from "@/components/sections/Hero";
-import { Problem } from "@/components/sections/Problem";
-import { Product } from "@/components/sections/Product";
-import { Carousel } from "@/components/sections/Carousel";
-import { Modules } from "@/components/sections/Modules";
-import { Bonus } from "@/components/sections/Bonus";
-import { Audience } from "@/components/sections/Audience";
-import { Transformation } from "@/components/sections/Transformation";
-import { HowItWorks } from "@/components/sections/HowItWorks";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
-import { Pricing } from "@/components/sections/Pricing";
-import { Guarantee } from "@/components/sections/Guarantee";
-import { FAQ } from "@/components/sections/FAQ";
-import { Upsell } from "@/components/sections/Upsell";
-import { FinalCTA } from "@/components/sections/FinalCTA";
-import { Footer } from "@/components/sections/Footer";
-import { SalesPopup } from "@/components/ui/SalesPopup";
+import dynamic from "next/dynamic";
+
+const Problem = dynamic(() => import("@/components/sections/Problem").then(m => m.Problem));
+const Product = dynamic(() => import("@/components/sections/Product").then(m => m.Product));
+const Carousel = dynamic(() => import("@/components/sections/Carousel").then(m => m.Carousel));
+const Modules = dynamic(() => import("@/components/sections/Modules").then(m => m.Modules));
+const Bonus = dynamic(() => import("@/components/sections/Bonus").then(m => m.Bonus));
+const Audience = dynamic(() => import("@/components/sections/Audience").then(m => m.Audience));
+const Transformation = dynamic(() => import("@/components/sections/Transformation").then(m => m.Transformation));
+const HowItWorks = dynamic(() => import("@/components/sections/HowItWorks").then(m => m.HowItWorks));
+const TestimonialsSection = dynamic(() => import("@/components/sections/TestimonialsSection").then(m => m.TestimonialsSection));
+const Pricing = dynamic(() => import("@/components/sections/Pricing").then(m => m.Pricing));
+const Guarantee = dynamic(() => import("@/components/sections/Guarantee").then(m => m.Guarantee));
+const FAQ = dynamic(() => import("@/components/sections/FAQ").then(m => m.FAQ));
+const Upsell = dynamic(() => import("@/components/sections/Upsell").then(m => m.Upsell));
+const FinalCTA = dynamic(() => import("@/components/sections/FinalCTA").then(m => m.FinalCTA));
+const Footer = dynamic(() => import("@/components/sections/Footer").then(m => m.Footer));
+const SalesPopup = dynamic(() => import("@/components/ui/SalesPopup").then(m => m.SalesPopup), { ssr: false });
 
 export default function Home() {
   return (

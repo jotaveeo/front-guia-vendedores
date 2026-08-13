@@ -25,7 +25,7 @@ export function Product() {
   return (
     <section className="relative w-full py-20 md:py-32 bg-[#0a0a0a] text-zinc-100 overflow-hidden z-0">
       <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-[400px] bg-amber-500/5 blur-[150px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-[400px] bg-amber-500/5 blur-[60px] md:blur-[150px] will-change-transform transform-gpu rounded-full pointer-events-none -z-10" />
 
       <div className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full z-10">
         <FadeIn className="flex flex-col items-center">
@@ -42,7 +42,8 @@ export function Product() {
                 alt="Mockup do Pacote Operação Vendedora"
                 width={800}
                 height={800}
-                className="w-full max-w-lg h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 768px) 100vw, 800px"
+                className="w-full max-w-lg h-auto object-contain drop-shadow-2xl md:drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform duration-700"
               />
             </div>
 

@@ -10,8 +10,8 @@ export function Hero() {
   return (
     <section className="relative w-full min-h-[90vh] flex items-center justify-center bg-[#0a0a0a] text-zinc-50 overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24 z-0">
       {/* Background neon glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[400px] bg-pink-500/10 blur-[120px] rounded-full pointer-events-none -z-10" />
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-xl h-[300px] bg-amber-500/10 blur-[120px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[400px] bg-pink-500/10 blur-[60px] md:blur-[120px] will-change-transform transform-gpu rounded-full pointer-events-none -z-10" />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-xl h-[300px] bg-amber-500/10 blur-[60px] md:blur-[120px] will-change-transform transform-gpu rounded-full pointer-events-none -z-10" />
 
       <div className="px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full z-10 flex flex-col items-center text-center">
         <FadeIn className="flex flex-col items-center gap-6 w-full">
@@ -41,7 +41,8 @@ export function Hero() {
                 width={800}
                 height={800}
                 priority
-                className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                sizes="(max-width: 768px) 100vw, 800px"
+                className="w-full h-auto object-contain drop-shadow-xl md:drop-shadow-2xl hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>

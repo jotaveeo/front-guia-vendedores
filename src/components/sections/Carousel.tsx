@@ -34,7 +34,7 @@ export function Carousel() {
 
   return (
     <section className="relative w-full py-24 bg-[#0a0a0a] overflow-hidden z-0 border-y border-zinc-900">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-[300px] bg-green-500/5 blur-[120px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-[300px] bg-green-500/5 blur-[60px] md:blur-[120px] will-change-transform transform-gpu rounded-full pointer-events-none -z-10" />
       
       <div className="px-4 max-w-6xl mx-auto w-full z-10">
         <FadeIn className="flex flex-col items-center text-center mb-12">
@@ -70,6 +70,7 @@ export function Carousel() {
                   src={images[currentIndex].src}
                   alt={images[currentIndex].alt}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-contain p-6 md:p-12"
                 />
               </motion.div>
