@@ -89,11 +89,14 @@ export function Pricing() {
                 rel="noopener noreferrer"
                 className="w-full h-full flex items-center justify-center"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
-                    (window as any).fbq('track', 'InitiateCheckout', {
-                      content_name: 'Pacote Básico',
-                      value: 19.00,
-                      currency: 'BRL'
+                  if (
+                    typeof window !== "undefined" &&
+                    typeof (window as any).fbq === "function"
+                  ) {
+                    (window as any).fbq("track", "InitiateCheckout", {
+                      content_name: "Pacote Básico",
+                      value: 19.0,
+                      currency: "BRL",
                     });
                   }
                 }}
@@ -211,11 +214,14 @@ export function Pricing() {
                 rel="noopener noreferrer"
                 className="w-full h-full flex items-center justify-center"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && typeof (window as any).fbq === 'function') {
-                    (window as any).fbq('track', 'InitiateCheckout', {
-                      content_name: 'Kit Revendedora Premium',
-                      value: 47.00,
-                      currency: 'BRL'
+                  if (
+                    typeof window !== "undefined" &&
+                    typeof (window as any).fbq === "function"
+                  ) {
+                    (window as any).fbq("track", "InitiateCheckout", {
+                      content_name: "Kit Revendedora Premium",
+                      value: 47.0,
+                      currency: "BRL",
                     });
                   }
                 }}
