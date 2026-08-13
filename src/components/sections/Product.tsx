@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { Copy, Clock, Zap } from 'lucide-react';
 
@@ -36,9 +37,11 @@ export function Product() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Imagem do Produto */}
             <div className="relative w-full rounded-3xl flex items-center justify-center group">
-              <img
-                src="/mockap-celular.png"
+              <Image
+                src="/mockap-celular.webp"
                 alt="Mockup do Pacote Operação Vendedora"
+                width={800}
+                height={800}
                 className="w-full max-w-lg h-auto object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] group-hover:scale-105 transition-transform duration-700"
               />
             </div>

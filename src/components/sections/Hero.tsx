@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Play, ShieldCheck } from "lucide-react";
@@ -28,16 +29,18 @@ export function Hero() {
           {/* Sub-headline */}
           <p className="text-lg md:text-xl text-zinc-400 leading-relaxed max-w-2xl text-pretty font-medium mt-2">
             Pare de perder tempo tentando adivinhar o que postar. Tenha o ano
-            inteiro de Stories e Ofertas prontas para a sua loja lucrar.
+            inteiro de Stories e Ofertas prontas para a sua loja lucrar. <span className="text-zinc-500 font-medium">(Receba diretamente no seu E-mail)</span>
           </p>
 
-          {/* Imagem do Produto */}
           <div className="w-full max-w-lg md:max-w-2xl mt-10 relative group mx-auto">
             <div className="absolute -inset-1 bg-gradient-to-r from-pink-500/20 via-zinc-800 to-amber-500/20 rounded-2xl blur-md opacity-50 group-hover:opacity-100 transition duration-700 group-hover:duration-200" />
             <div className="relative rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex items-center justify-center overflow-visible">
-              <img
-                src="/capa_produto.png"
+              <Image
+                src="/capa_produto.webp"
                 alt="Capa do Produto Operação Vendedora"
+                width={800}
+                height={800}
+                priority
                 className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
               />
             </div>

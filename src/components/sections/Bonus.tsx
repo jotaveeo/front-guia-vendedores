@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Section } from '@/components/ui/Section';
 import { Card } from '@/components/ui/Card';
 import { Gift, FileText, MessageSquare, Calendar, LayoutList, ListChecks, Smartphone } from 'lucide-react';
@@ -33,7 +34,7 @@ export function Bonus() {
         <Card className="col-span-1 md:col-span-2 lg:col-span-3 bg-primary text-primary-foreground flex flex-col md:flex-row gap-8 items-center border-4 border-foreground shadow-[8px_8px_0_0_#1a1a1a]">
           <div className="w-32 h-32 md:w-48 md:h-48 bg-foreground text-background flex-shrink-0 flex items-center justify-center rounded-xl border-4 border-foreground relative overflow-hidden">
              <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(currentColor 2px, transparent 2px)', backgroundSize: '8px 8px' }}></div>
-             <img src="/logo-500x500.png" alt="Produto Principal" className="w-full h-full object-contain p-2 z-10" />
+             <Image src="/logo-500x500.webp" alt="Produto Principal" width={500} height={500} className="w-full h-full object-contain p-2 z-10" />
           </div>
           <div>
             <span className="inline-block px-3 py-1 bg-foreground text-background font-bold text-sm rounded-full mb-4">PRODUTO PRINCIPAL</span>

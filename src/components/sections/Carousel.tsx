@@ -4,13 +4,14 @@ import React, { useState, useEffect } from "react";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export function Carousel() {
   const images = [
-    { src: "/capa_produto2.png", alt: "Mockup no Celular" },
-    { src: "/imagem2-carrossel.png", alt: "Capa do Produto Completo" },
-    { src: "/imagem3-carrossel.png", alt: "Logo Operação Vendedora" },
-    { src: "/imagem4carrossel.png", alt: "Logo Operação Vendedora" },
+    { src: "/capa_produto2.webp", alt: "Mockup no Celular" },
+    { src: "/imagem2-carrossel.webp", alt: "Capa do Produto Completo" },
+    { src: "/imagem3-carrossel.webp", alt: "Logo Operação Vendedora" },
+    { src: "/imagem4carrossel.webp", alt: "Logo Operação Vendedora" },
     
   ];
 
@@ -57,16 +58,21 @@ export function Carousel() {
           {/* Area do Carrossel */}
           <div className="relative w-full aspect-square md:aspect-video rounded-3xl bg-gradient-to-b from-zinc-900 to-[#121212] border border-zinc-800 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden flex items-center justify-center">
             <AnimatePresence mode="wait">
-              <motion.img
+              <motion.div
                 key={currentIndex}
-                src={images[currentIndex].src}
-                alt={images[currentIndex].alt}
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.3 }}
-                className="w-full h-full object-contain p-6 md:p-12 drop-shadow-2xl"
-              />
+                className="absolute w-full h-full p-6 md:p-12 drop-shadow-2xl flex items-center justify-center"
+              >
+                <Image
+                  src={images[currentIndex].src}
+                  alt={images[currentIndex].alt}
+                  fill
+                  className="object-contain p-6 md:p-12"
+                />
+              </motion.div>
             </AnimatePresence>
           </div>
 
