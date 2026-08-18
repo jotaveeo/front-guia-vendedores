@@ -29,7 +29,7 @@ export function FinalCTA() {
               COMEÇAR COM R$ 19,90
             </a>
             <a
-              href="https://pay.cakto.com.br/3ce7ort"
+              href="https://pay.cakto.com.br/pf4uh7i"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full md:w-auto px-8 md:px-12 py-4 md:py-5 text-base md:text-lg font-extrabold bg-green-500 hover:bg-green-400 text-zinc-950 rounded-full transition-all flex items-center justify-center uppercase shadow-[0_0_30px_rgba(34,197,94,0.2)] hover:shadow-[0_0_50px_rgba(34,197,94,0.4)] hover:scale-105"

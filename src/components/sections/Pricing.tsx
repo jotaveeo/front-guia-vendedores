@@ -129,7 +129,7 @@ export function Pricing() {
             </div>
 
             <a
-              href="https://pay.cakto.com.br/3ce7ort"
+              href="https://pay.cakto.com.br/pf4uh7i"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-lg py-5 px-8 font-extrabold bg-green-500 hover:bg-green-400 text-zinc-950 rounded-full transition-all hover:scale-[1.02] inline-flex items-center justify-center uppercase shadow-[0_0_30px_rgba(34,197,94,0.2)]"
