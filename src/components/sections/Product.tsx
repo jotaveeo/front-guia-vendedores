@@ -30,9 +30,17 @@ export function Product() {
       <div className="px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full z-10">
         <FadeIn className="flex flex-col items-center">
           
-          <h2 className="text-3xl md:text-5xl font-extrabold text-center tracking-tight mb-16 text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-400">
-            Apresentando a Operação Vendedora
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-400">
+              Apresentando a Operação Vendedora
+            </h2>
+            <p className="text-xl md:text-2xl font-bold text-amber-500">
+              Copia, Cola e Vende
+            </p>
+            <p className="text-lg text-zinc-400 max-w-3xl mx-auto mt-6">
+              Um sistema de vendas pronto para revendedoras que querem saber exatamente o que postar, o que falar e como continuar a conversa com uma cliente — sem precisar passar horas criando conteúdo.
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Imagem do Produto */}

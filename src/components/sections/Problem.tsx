@@ -1,36 +1,48 @@
 import React from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
-import { XCircle } from 'lucide-react';
 
 export function Problem() {
   const problems = [
-    "Perde horas tentando criar artes no Canva e sai tudo amador.",
-    "Posta foto do catálogo e ninguém responde.",
-    "As clientes perguntam o preço, você responde e elas somem."
+    {
+      title: "1. POSTAR",
+      desc: "Você perde tempo pensando no que postar."
+    },
+    {
+      title: "2. VENDER",
+      desc: "A cliente pergunta o preço e depois desaparece."
+    },
+    {
+      title: "3. RECEBER",
+      desc: "Você vende, mas perde o controle de quem ainda precisa pagar."
+    }
   ];
 
   return (
-    <section className="relative w-full py-20 md:py-32 bg-[#121212] text-zinc-100 overflow-hidden z-0">
-      <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
-      
-      <div className="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full z-10 flex flex-col items-center">
+    <section className="relative w-full py-20 md:py-32 bg-[#121212] text-zinc-100 overflow-hidden z-0 border-t border-zinc-800">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full z-10 flex flex-col items-center">
         <FadeIn className="flex flex-col items-center w-full">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center tracking-tight mb-12 text-zinc-100 drop-shadow-sm">
-            Você trabalha o dia inteiro para ficar no <span className="text-red-500">vácuo?</span>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-center tracking-tight mb-16 text-zinc-100">
+            Você trabalha muito para vender pouco.
           </h2>
 
-          <div className="flex flex-col gap-4 md:gap-6 w-full max-w-3xl">
-            {problems.map((text, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-16">
+            {problems.map((prob, idx) => (
               <div 
                 key={idx} 
-                className="flex items-start gap-4 md:gap-5 p-5 md:p-8 rounded-2xl bg-[#1a1a1a] border border-zinc-800/80 shadow-lg hover:border-zinc-700 hover:-translate-y-1 transition-all duration-300"
+                className="flex flex-col gap-3 p-8 rounded-2xl bg-[#1a1a1a] border border-zinc-800 hover:border-zinc-700 transition-all text-center"
               >
-                <XCircle className="w-8 h-8 text-red-500 shrink-0 mt-0.5" strokeWidth={2.5} />
-                <p className="text-base md:text-xl text-zinc-300 font-medium leading-relaxed">
-                  {text}
+                <h3 className="text-red-500 font-extrabold tracking-widest uppercase text-sm">{prob.title}</h3>
+                <p className="text-lg text-zinc-300 font-medium">
+                  {prob.desc}
                 </p>
               </div>
             ))}
+          </div>
+
+          <div className="bg-green-500/10 border border-green-500/20 px-8 py-4 rounded-full">
+            <p className="text-green-400 font-bold text-lg md:text-xl text-center">
+              A Operação Vendedora foi criada para atacar essas três etapas.
+            </p>
           </div>
         </FadeIn>
       </div>

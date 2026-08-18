@@ -1,61 +1,61 @@
 import React from 'react';
-import { Section } from '@/components/ui/Section';
-import { Card } from '@/components/ui/Card';
+import { FadeIn } from '@/components/ui/FadeIn';
 import { Check, X } from 'lucide-react';
 
 export function Audience() {
-  const isFor = [
-    "Você vende pelo WhatsApp",
-    "Usa Instagram ou Stories para divulgar",
-    "Trabalha com cosméticos, perfumes, roupas, semijoias ou produtos diversos",
-    "Já possui clientes",
-    "Quer organizar melhor seus pedidos",
-    "Quer parecer mais profissional no digital",
-    "Quer parar de depender exclusivamente da memória e das conversas do WhatsApp"
+  const target = [
+    "Trabalha com revenda;",
+    "Vende moda, beleza, cosméticos, semijoias etc.;",
+    "Usa Instagram ou WhatsApp para vender;",
+    "Perde tempo pensando no que postar;",
+    "Quer uma estrutura pronta para trabalhar seu conteúdo."
   ];
 
   const notFor = [
-    "Você procura uma fórmula de enriquecimento rápido",
-    "Espera que um produto faça as vendas por você",
-    "Já possui uma operação digital altamente estruturada",
-    "Procura um curso avançado de tráfego pago"
+    "Procura dinheiro fácil;",
+    "Não pretende divulgar seus produtos;",
+    "Espera que um PDF venda sozinho;",
+    "Não quer conversar com clientes."
   ];
 
   return (
-    <Section variant="muted" className="border-y-4 border-foreground">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <Card className="border-4 border-foreground shadow-[8px_8px_0_0_#1a1a1a]">
-          <h3 className="text-2xl md:text-3xl font-extrabold text-foreground mb-8">
-            Esse material é para você se...
-          </h3>
-          <ul className="flex flex-col gap-4">
-            {isFor.map((item, idx) => (
-              <li key={idx} className="flex gap-4 items-start">
-                <div className="mt-1 bg-primary text-primary-foreground rounded-full p-1 border-2 border-foreground flex-shrink-0">
-                  <Check className="w-5 h-5" />
-                </div>
-                <span className="font-bold text-lg text-foreground/90">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
+    <section className="relative w-full py-20 md:py-32 bg-[#121212] text-zinc-100 overflow-hidden z-0">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full z-10">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          
+          {/* Para Quem É */}
+          <FadeIn className="bg-[#1a1a1a] border border-green-500/20 rounded-3xl p-8 md:p-10 shadow-xl">
+            <h3 className="text-3xl font-extrabold text-zinc-100 mb-8">
+              É para você se:
+            </h3>
+            <ul className="space-y-5">
+              {target.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <Check className="w-6 h-6 text-green-500 shrink-0" />
+                  <span className="text-zinc-300 font-medium text-lg leading-snug">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </FadeIn>
 
-        <Card className="border-4 border-foreground shadow-[8px_8px_0_0_#1a1a1a] bg-foreground text-background">
-          <h3 className="text-2xl md:text-3xl font-extrabold mb-8 text-background">
-            Esse material provavelmente não é para você se...
-          </h3>
-          <ul className="flex flex-col gap-4">
-            {notFor.map((item, idx) => (
-              <li key={idx} className="flex gap-4 items-start">
-                <div className="mt-1 bg-red-500 text-white rounded-full p-1 border-2 border-background flex-shrink-0">
-                  <X className="w-5 h-5" />
-                </div>
-                <span className="font-bold text-lg opacity-90 text-background">{item}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
+          {/* Para Quem Não É */}
+          <FadeIn delay={0.2} className="bg-[#1a1a1a] border border-red-500/20 rounded-3xl p-8 md:p-10 shadow-xl">
+            <h3 className="text-3xl font-extrabold text-zinc-100 mb-8">
+              Não é para você se:
+            </h3>
+            <ul className="space-y-5">
+              {notFor.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <X className="w-6 h-6 text-red-500 shrink-0" />
+                  <span className="text-zinc-400 font-medium text-lg leading-snug">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </FadeIn>
+
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }

@@ -1,42 +1,44 @@
 import React from 'react';
-import { Section } from '@/components/ui/Section';
-import { Card } from '@/components/ui/Card';
-import { Check } from 'lucide-react';
+import { FadeIn } from '@/components/ui/FadeIn';
 
 export function Modules() {
   const modules = [
-    "Como adaptar sua venda do catálogo físico para o digital",
-    "Como transformar o Instagram em uma vitrine",
-    "Como utilizar melhor os Stories",
-    "Como organizar o WhatsApp para vender",
-    "Como organizar clientes e pedidos",
-    "Como controlar pagamentos e entregas",
-    "Como melhorar o pós-venda",
-    "Como criar conteúdo sem passar horas no Canva",
-    "Como criar uma vitrine digital",
-    "O que vale a pena automatizar primeiro"
+    { title: "01 — 365 Dias de Ideias para Stories", desc: "Nunca mais comece o dia pensando no que postar." },
+    { title: "02 — 2.000 Templates Canva", desc: "Tenha modelos visuais para adaptar e publicar." },
+    { title: "03 — Operação Vendedora", desc: "Aprenda a transformar uma postagem em uma oportunidade de venda." },
+    { title: "04 — Anti-Vácuo do WhatsApp", desc: "Tenha mensagens para continuar conversas e fazer follow-up." },
+    { title: "05 — Vitrine Express", desc: "Apresente seus produtos de forma organizada." },
+    { title: "06 — Planilha Anti-Fiado", desc: "Controle clientes, vendas e valores pendentes." },
+    { title: "07 — Revendedora Digital", desc: "Organize sua presença e operação no digital." },
+    { title: "08 — A Ilusão da Postagem", desc: "Entenda por que simplesmente postar não significa vender." },
   ];
 
   return (
-    <Section variant="muted" className="border-y-4 border-foreground">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-foreground">
-          O que você vai aprender
-        </h2>
-      </div>
+    <section className="relative w-full py-20 md:py-32 bg-[#0a0a0a] text-zinc-100 overflow-hidden z-0">
+      <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
+      
+      <div className="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full z-10">
+        <FadeIn className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-b from-zinc-100 to-zinc-400">
+            O que você recebe
+          </h2>
+        </FadeIn>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {modules.map((mod, idx) => (
-          <Card key={idx} className="flex gap-4 items-start border-2 border-foreground shadow-[4px_4px_0_0_#1a1a1a]">
-            <div className="mt-1 bg-primary text-primary-foreground rounded-full p-1 border-2 border-foreground">
-              <Check className="w-5 h-5" />
-            </div>
-            <p className="font-bold text-foreground text-lg leading-snug">
-              {mod}
-            </p>
-          </Card>
-        ))}
+        <div className="flex flex-col gap-4">
+          {modules.map((mod, idx) => (
+            <FadeIn key={idx} delay={0.05 * idx} className="bg-[#121212] border border-zinc-800 rounded-2xl p-6 hover:border-zinc-700 transition-colors shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-zinc-100 mb-2">
+                  {mod.title}
+                </h3>
+                <p className="text-zinc-400 font-medium">
+                  {mod.desc}
+                </p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }

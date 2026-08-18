@@ -1,64 +1,53 @@
 import React from 'react';
-import Image from 'next/image';
-import { Section } from '@/components/ui/Section';
-import { Card } from '@/components/ui/Card';
-import { Gift, FileText, MessageSquare, Calendar, LayoutList, ListChecks, Smartphone } from 'lucide-react';
+import { FadeIn } from '@/components/ui/FadeIn';
+import { FileText, LayoutTemplate, Gift } from 'lucide-react';
 
 export function Bonus() {
   const bonuses = [
-    { title: "365 Roteiros de Stories Prontos", icon: <Smartphone className="w-8 h-8" />, value: "R$ 97,00" },
-    { title: "20 mensagens prontas para WhatsApp (Anti-Vacuo)", icon: <MessageSquare className="w-8 h-8" />, value: "R$ 47,00" },
-    { title: "Planilha Anti-Fiado", icon: <FileText className="w-8 h-8" />, value: "R$ 47,00" },
-    { title: "Calendário semanal de conteúdo", icon: <Calendar className="w-8 h-8" />, value: "R$ 27,00" },
-    { title: "Checklist do Instagram profissional", icon: <ListChecks className="w-8 h-8" />, value: "R$ 27,00" },
-    { title: "Checklist de Vendas Profissionais", icon: <LayoutList className="w-8 h-8" />, value: "R$ 27,00" },
-    { title: "Roteiro para criar sua vitrine digital", icon: <Gift className="w-8 h-8" />, value: "R$ 47,00" },
-    { title: "O Calendário Anual (365 Dias de Stories Prontos)", icon: <Calendar className="w-8 h-8" />, value: "R$ 97,00" },
-    { title: "365 Dias de Ideias para Stories", icon: <Smartphone className="w-8 h-8" />, value: "R$ 97,00" },
-    { title: "Guia de Edição no Canva", icon: <LayoutList className="w-8 h-8" />, value: "R$ 47,00" },
-    { title: "Vitrine Express", icon: <LayoutList className="w-8 h-8" />, value: "R$ 47,00" },
+    { title: "Planilha Anti-Fiado", icon: <FileText className="w-10 h-10 text-amber-500" />, desc: "Controle absoluto de quem te deve para você não perder dinheiro e manter a saúde financeira do seu negócio em dia." },
+    { title: "Templates Premium", icon: <LayoutTemplate className="w-10 h-10 text-amber-500" />, desc: "Templates de alta conversão prontos para usar no seu perfil, trazendo um ar profissional para sua loja imediatamente." },
   ];
 
   return (
-    <Section>
-      <div className="text-center mb-16 max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-foreground mb-6">
-          O que você recebe
-        </h2>
-        <p className="text-lg md:text-xl font-medium text-foreground/80">
-          Além do Produto principal, você recebe 7 materiais práticos para acelerar sua organização.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <Card className="col-span-1 md:col-span-2 lg:col-span-3 bg-primary text-primary-foreground flex flex-col md:flex-row gap-8 items-center border-4 border-foreground shadow-[8px_8px_0_0_#1a1a1a]">
-          <div className="w-32 h-32 md:w-48 md:h-48 bg-foreground text-background flex-shrink-0 flex items-center justify-center rounded-xl border-4 border-foreground relative overflow-hidden">
-             <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(currentColor 2px, transparent 2px)', backgroundSize: '8px 8px' }}></div>
-             <Image src="/logo-500x500.webp" alt="Produto Principal" width={500} height={500} className="w-full h-full object-contain p-2 z-10" />
+    <section className="relative w-full py-20 md:py-32 bg-zinc-950 text-zinc-100 overflow-hidden z-0">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full z-10">
+        <FadeIn className="text-center mb-16 max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 font-bold text-sm uppercase tracking-widest mb-6">
+            <Gift className="w-4 h-4" /> Bônus Exclusivos
           </div>
-          <div>
-            <span className="inline-block px-3 py-1 bg-foreground text-background font-bold text-sm rounded-full mb-4">PRODUTO PRINCIPAL</span>
-            <h3 className="text-2xl md:text-4xl font-extrabold mb-4">O Produto Prático</h3>
-            <p className="text-lg md:text-xl font-bold opacity-90">Como organizar suas vendas pelo WhatsApp e Instagram.</p>
-          </div>
-        </Card>
+          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6 text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-400">
+            E não para por aí...
+          </h2>
+          <p className="text-lg md:text-xl font-medium text-zinc-400">
+            Garantindo seu acesso hoje, você também leva estes 2 bônus essenciais totalmente de graça.
+          </p>
+        </FadeIn>
 
-        {bonuses.map((bonus, idx) => (
-          <Card key={idx} className="flex flex-col items-center justify-between text-center gap-4 border-2 border-foreground shadow-[4px_4px_0_0_#1a1a1a] h-full">
-            <div className="flex flex-col items-center">
-              <span className="px-3 py-1 bg-primary text-primary-foreground font-bold text-xs rounded-full border-2 border-foreground mb-2">BÔNUS 0{idx + 1}</span>
-              <div className="text-foreground my-2">
-                {bonus.icon}
-              </div>
-              <h4 className="font-bold text-lg mb-2">{bonus.title}</h4>
-            </div>
-            <div className="mt-auto pt-4 border-t-2 border-foreground/10 w-full flex flex-col items-center">
-              <span className="line-through text-foreground/50 font-bold text-sm">De {bonus.value}</span>
-              <span className="text-green-600 font-extrabold text-lg uppercase tracking-wide">Por Grátis</span>
-            </div>
-          </Card>
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {bonuses.map((bonus, idx) => (
+             <FadeIn key={idx} delay={0.1 * (idx + 1)} className="bg-[#121212] border border-amber-500/20 rounded-3xl p-8 hover:border-amber-500/40 transition-colors shadow-lg relative overflow-hidden group">
+               <div className="absolute -top-6 -right-6 p-6 opacity-5 group-hover:opacity-10 transition-opacity scale-150">
+                  {bonus.icon}
+               </div>
+               <div className="mb-6 inline-block p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20">
+                  {bonus.icon}
+               </div>
+               <div className="mb-4">
+                 <span className="inline-block px-3 py-1 bg-amber-500 text-zinc-950 font-bold text-xs uppercase tracking-widest rounded-full">
+                    BÔNUS 0{idx + 1}
+                 </span>
+               </div>
+               <h3 className="text-2xl font-extrabold text-zinc-100 mb-4">{bonus.title}</h3>
+               <p className="text-zinc-400 font-medium mb-8 leading-relaxed">{bonus.desc}</p>
+               
+               <div className="mt-auto pt-6 border-t border-zinc-800 flex items-center justify-between">
+                 <span className="text-zinc-500 font-medium line-through">De R$ 47,00</span>
+                 <span className="text-amber-400 font-extrabold text-lg uppercase">GRÁTIS</span>
+               </div>
+             </FadeIn>
+          ))}
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }
